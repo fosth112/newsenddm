@@ -5,6 +5,7 @@ import asyncio
 import ssl
 import aiohttp
 from dotenv import load_dotenv
+from myserver import server_on
 
 # โหลดค่า Token จาก .env
 load_dotenv()
@@ -114,5 +115,5 @@ async def dm_embed(ctx):
         round_count += 1
 
     await ctx.send("✅ ส่งข้อความครบทุกคนแล้ว!")
-
+server_on()
 bot.run(MAIN_TOKEN)
