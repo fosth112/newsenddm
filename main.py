@@ -7,8 +7,6 @@ import aiohttp
 from dotenv import load_dotenv
 from myserver import server_on
 
-# โหลดค่า Token จาก .env
-load_dotenv()
 
 MAIN_TOKEN = os.getenv("MAIN_TOKEN")
 TOKENS = os.getenv("TOKENS").split(",")
